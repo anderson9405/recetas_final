@@ -1,0 +1,23 @@
+{% extends 'cabecera.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="../static/index.css">
+
+<section style="margin-top: 80px;">
+    <div class="row">
+      <div class="col-md-8 introduction-text">
+        <p>Siempre he creído que los sabores más auténticos y reconfortantes vienen del corazón, 
+          y es precisamente eso lo que encontrarás aquí en 'La Cocina de Anita'. <br><br>
+          Bienvenidos a un rincón donde las recetas pasadas de generación en generación se 
+          entrelazan con el amor y la tradición. Únete a nosotros en este viaje culinario donde 
+          cada plato cuenta una historia, donde cada aroma evoca recuerdos y donde cada bocado 
+          te lleva de vuelta a casa. </p>
+      </div>
+      <div class="col-md-4">
+        <img class="introduction-img" src="../static/abuela.avif" alt="anita-photo">
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

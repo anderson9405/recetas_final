@@ -1,0 +1,17 @@
+{% extends 'cabecera.html' %}
+
+{% block content %}
+    <h1>Recetas</h1>
+
+<div>
+    {% for receta in recetas %}
+    <td>
+        <ul>
+            <a href="{% url 'recetas_detalle' receta.id %}">
+                <h3>- {{receta.nombre}}</h3>
+            </a>
+        </ul>
+    </td>
+    {% endfor %}
+</div>
+{% endblock %}
